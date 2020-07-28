@@ -154,7 +154,7 @@ body{
     
 }
 
-.btn-white::after{
+.btn--white::after{
     background-color: white;
 }
 
