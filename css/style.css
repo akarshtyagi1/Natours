@@ -1,4 +1,4 @@
-/*
+ /*
 COLORS:
 
 Light green: #7ed56f
@@ -7,13 +7,15 @@ Dark green: #28b485
 
 */
 
-*{
+*,
+*::after,
+*::before{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
 body{
     padding: 3rem;
@@ -22,6 +24,7 @@ body{
     color: #777;
     width: 100vw;
     transition: all 0.4s;
+    box-sizing: border-box;
 }
 
 .header{
@@ -33,17 +36,17 @@ body{
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top: 4rem;
     left:4rem;
 }
 
-#header-logo{
+.header__header-logo{
     height: 3.5rem;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -55,7 +58,7 @@ body{
     text-transform: uppercase;
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display: block;
     font-size: 6rem;
     letter-spacing: 3.5rem;
@@ -66,7 +69,7 @@ body{
     
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
     font-size: 2rem;
     letter-spacing: 1.75rem;
@@ -115,6 +118,8 @@ body{
     padding: 1.5rem 4rem;
     display: inline-block;
     transition: all 0.2s;
+    border-radius: 10rem;
+    font-size: 1.6rem;
     position: relative;
     animation-fill-mode: backwards;
 }
@@ -173,9 +178,9 @@ body{
     }
 }
 
-@media (max-width: 68rem){
+/* @media (max-width: 68rem){
     body{
         padding: 0;
         transition: all 0.4s;
     }
-}
+} */
