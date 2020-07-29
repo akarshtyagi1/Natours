@@ -1,0 +1,35 @@
+
+body{
+    padding: 3rem;
+    font-family: 'Lato';
+    font-weight: 400;
+    color: #777;
+    width: 100vw;
+    transition: all 0.4s;
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+
+    &--main{
+        display: block;
+        font-size: 6rem;
+        letter-spacing: 3.5rem;
+        font-weight: 400;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        
+    }
+    
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 6rem;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+    }
+}
