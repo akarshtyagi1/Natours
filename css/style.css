@@ -165,6 +165,32 @@ body {
   transform: translateY(0);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15); }
 
+.composition {
+  position: relative; }
+  .composition_photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.2s;
+    outline-offset: 2rem; }
+    .composition_photo-p1 {
+      left: 0;
+      top: -2rem; }
+    .composition_photo-p2 {
+      right: 0;
+      top: 2rem; }
+    .composition_photo-p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition_photo:hover {
+      outline: solid #55c57a 1.5rem;
+      z-index: 10;
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+  .composition:hover .composition_photo:not(:hover) {
+    transform: scale(0.9); }
+
 .header {
   position: relative;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.795)), url(../img/hero.jpg);
