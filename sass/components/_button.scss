@@ -22,6 +22,16 @@
         }
     }
 
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 10rem;
+
+        &::after{
+            background-color: $color-primary-light;
+        }
+    }
+
     &:hover{
         transform: translateY(-0.6rem);
         box-shadow: 0 1rem 2rem rgba($color-black,0.2);
